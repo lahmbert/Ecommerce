@@ -22,7 +22,6 @@ jobs:
       run: composer install -q --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist
     - name: Install Node dependencies.
     - run: npm install
-    # Copy over example configuration.
     - name: Dont forget to set the database config in .env.example correctly
     - run: cp .env.example .env
     - name: Generate an application key. Re-cache.
